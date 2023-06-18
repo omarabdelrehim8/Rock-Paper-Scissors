@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: rgb(31, 10, 67);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
+
+header {
+  font-family: 'Games', sans-serif;
+  color: white;
+  font-size: 50px;   
+  text-align: center;
+  padding: 15px;        
+}
+
+main {
+  display: flex;
+  width: 100%;
+  gap: 80px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.player-logo, .ai-logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.player-selection, .computer-selection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-health, .computer-health {
+  border: solid 3px rgb(245,181,27);
+  background-color: rgb(47,47,47);
+  border-radius: 10px;
+  width: 400px;
+  height: 50px;
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.heart-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart {
+  width: 50px;
+  height: 50px;
+}
+
+.choice-text {
+  font-family: 'Bagel Fat One';
+  margin-bottom: 30px;
+  color: rgb(245,181,27);
+  font-size: 25px;
+  border: solid 3px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: rgb(47,47,47);
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.button {
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.button:hover, .questionMark-logo:hover {
+  transform: scale(1.15);
+}
+
+.button:active {
+  transform: scale(1.05);
+}
+
+.questionMark-logo {
+  transition: all 0.15s;
+}
+
+img {
+  width: 105px;
+}
+
+
+

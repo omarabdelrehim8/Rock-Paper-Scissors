@@ -1,5 +1,4 @@
 const choices = ["rock", "paper", "scissors"];
-const playerSelection = prompt("Which sign do you want to play?");
 const results = [];
 let computerSelection;
 
@@ -20,7 +19,7 @@ function compareHands(playerSelection, computerSelection = getComputerChoice()) 
 
   } else {
 
-    return `You're even! You both chose ${playerSelection}`
+    return `It's a tie! You both chose ${playerSelection}`
   }
 }
 
