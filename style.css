@@ -5,7 +5,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 70px;
+  gap: 50px;
 }
 
 header {
@@ -21,7 +21,7 @@ main {
   width: 100%;
   gap: 80px;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .player-logo, .ai-logo {
@@ -40,22 +40,24 @@ main {
   border: solid 3px rgb(245,181,27);
   background-color: rgb(47,47,47);
   border-radius: 10px;
-  width: 400px;
+  width: 300px;
   height: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: flex;
+  gap: 10px;
+  justify-content: center;
 }
 
 .heart-container {
   display: flex;
-  flex: 1;
   justify-content: center;
   align-items: center;
 }
 
 .heart {
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
+  margin-left: 3px;
 }
 
 .choice-text {
@@ -73,14 +75,16 @@ main {
   display: flex;
   justify-content: space-between;
   gap: 80px;
+  margin-top: 15px;
 }
+
 
 .button {
   cursor: pointer;
   transition: all 0.15s;
 }
 
-.button:hover, .questionMark-logo:hover {
+.button:hover {
   transform: scale(1.15);
 }
 
@@ -88,13 +92,21 @@ main {
   transform: scale(1.05);
 }
 
-.questionMark-logo {
-  transition: all 0.15s;
-}
 
 img {
   width: 105px;
 }
 
+.noSelect {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
-
+.noSelect:focus {
+  outline: none !important;
+}

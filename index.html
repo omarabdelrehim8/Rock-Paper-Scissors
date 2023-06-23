@@ -21,70 +21,76 @@
 
     <section class="player-selection">
       <div>
-        <img class= "player-logo" src="donkey.png" alt="YOU">
+        <img id="playerLogo" class= "player-logo" src="donkey.png" alt="YOU">
       </div>
-      <div class="player-health">
-        <div class="heart-container">
+  
+      <div id="playerHC"class="player-health">
+  
+        <div id="player-heart1" class="heart-container">
           <img  class="heart" src="heart.png" alt="heart">
         </div>
-        <div class="heart-container">
+        <div id="player-heart2" class="heart-container">
           <img  class="heart" src="heart.png" alt="heart">
         </div>
-        <div class="heart-container">
+        <div id="player-heart3" class="heart-container">
           <img  class="heart" src="heart.png" alt="heart">
         </div>
-        <div class="heart-container">
+        <div id="player-heart4" class="heart-container">
           <img  class="heart" src="heart.png" alt="heart">
         </div>
-        <div class="heart-container">
+        <div id="player-heart5" class="heart-container">
           <img  class="heart" src="heart.png" alt="heart">
         </div>
+
+        <div id="playerResultTxt"></div>
       </div>
 
 
       <div class="choice-text">CHOOSE YOUR WEAPON</div>
-      <div class="buttons-container">
-        <div class="button">
+
+      <div class="buttons-container noSelect">
+        <div id="rock-btn" class="button">
           <img src="asteroid.png" alt="rock">
         </div>
-        <div class="button">
+        <div id="paper-btn" class="button">
           <img src="toilet-paper.png" alt="paper">
         </div>
         <div class="button">
-          <img src="chainsaw.png" alt="scissors">
+          <img id="scissors-btn" src="chainsaw.png" alt="scissors">
         </div>
       </div>
     </section>
 
-    
 
     <section class="computer-selection">
       <div>
-        <img class= "ai-logo" src="ai.png" alt="computer">
+        <img id = "aiLogo" class= "ai-logo noSelect" src="ai.png" alt="computer">
       </div>
-      <div class="computer-health">
-        <div class="heart-container">
+      <div id="computerHC" class="computer-health">
+        <div id="computer-heart1" class="heart-container">
           <img  class="heart" src="heart.png" alt="heart">
         </div>
-        <div class="heart-container">
+        <div id="computer-heart2" class="heart-container">
           <img  class="heart" src="heart.png" alt="heart">
         </div>
-        <div class="heart-container">
+        <div id="computer-heart3" class="heart-container">
           <img  class="heart" src="heart.png" alt="heart">
         </div>
-        <div class="heart-container">
+        <div id="computer-heart4" class="heart-container">
           <img  class="heart" src="heart.png" alt="heart">
         </div>
-        <div class="heart-container">
+        <div id="computer-heart5" class="heart-container">
           <img  class="heart" src="heart.png" alt="heart">
         </div>
+        <div id="computerResultTxt"></div>
       </div>
 
 
       <div class="choice-text">AI's CHOSEN WEAPON</div>
-      <div class="buttons-container">
+
+      <div class="buttons-container noSelect">
         <div>
-          <img class="questionMark-logo" src="question-mark.png" alt="rock">
+          <img id = "questionMark" class="questionMark-logo" src="question-mark.png" alt="question-mark">
         </div>
       </div>
     </section>
